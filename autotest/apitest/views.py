@@ -69,6 +69,8 @@ def left(request):
 	return render(request,"left.html")
 def report(request):
 	return render(request,"report.html")
+def welcome(request):
+	return render(request,"welcome.html")
 #搜索功能
 @login_required
 def apisearch(request):
