@@ -17,6 +17,13 @@
 				</ul> 
 			</div> 
 		</nav> 
+		<!--搜索框-->
+		<div class="page-header" style="padding-top: 70px;"> 
+			<form class="navbar-form" method="get" action="/bugsearch/" style=float:right;> {% csrf_token %} 
+				<input type="search" name="bugname" placeholder="名称" required> 
+				<button type="submit">搜索</button> 
+			</form> 
+		</div>
 		<!--bug列表--> 
 		<div class="row" style="padding-top: 70px;"> 
 			<div class="col-md-12"> 

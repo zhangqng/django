@@ -19,6 +19,7 @@ from apitest import views
 from product import proviews
 from bug import bugviews
 from set import setviews
+from webtest import webviews
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -26,6 +27,7 @@ urlpatterns = [
 	path('login/', views.login),
 	path(r'home/', views.home),
 	path('logout/', views.logout),
+	path('test_report/', views.test_report),
 	path('product_manage/', proviews.product_manage),
 	path('apitest_manage/',views.apitest_manage),
 	path('apistep_manage/',views.apistep_manage),
@@ -33,4 +35,19 @@ urlpatterns = [
 	path('bug_manage/',bugviews.bug_manage),
 	path('set_manage/',setviews.set_manage),
 	path('user/',setviews.set_user),
+	path('webcase_manage/', webviews.webcase_manage), 
+	path('webcasestep_manage/', webviews.webcasestep_manage),
+	path('left/', views.left),
+	path('apisearch/', views.apisearch),
+	path('apistepsearch/', views.apistepsearch),
+	path('setsearch/', setviews.setsearch),
+	path('productsearch/', proviews.productsearch),
+	path('apissearch/', views.apissearch),
+	path('bugsearch/', bugviews.bugsearch),
+	path('websearch/', webviews.websearch), 
+	path('webstepsearch/', webviews.webstepsearch),
+	path ('usersearch/', setviews.usersearch),
+	path('report/', views.report),
+	
+	
 ]
